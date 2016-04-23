@@ -18,3 +18,5 @@ __aww-data__ is the central reposirtory that makes the data of [awesome](https:/
 - Discuss feature requests in the [issue tracker](https://github.com/scriptnull/aww-data/issues) before working on it.
 - PRs are most welcomed.
 
+### License
+[![GPLv3](https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/GPLv3_Logo.svg/320px-GPLv3_Logo.svg.png)](https://github.com/scriptnull/aww-data/blob/master/LICENSE.md)
