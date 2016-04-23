@@ -28,7 +28,7 @@ function fetchGithubReadMe(owner, repo, callback) {
     headers: {
       'User-Agent': 'aww-data',
       'Authorization':
-        'Basic '.concat(process.env.GITHUB_TOKEN)
+        'Basic '.concat(process.env.GITHUB_API_TOKEN)
     }
   };
 
