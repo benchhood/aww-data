@@ -22,7 +22,25 @@ function childWorker(repoOwner, repoName, callback) {
         return callback(error);
       }
       var awesomeList = getAwesomeList(content);
-      return callback(null,awesomeList);
+      var finalList = [];
+
+      // apply filters
+      awesomeList.forEach(
+        function(awesomeObj) {
+          //reject badges
+          if (/\.svg$/.test(awesomeObj.url))
+            return;
+          if (/^#/.test(awesomeObj.url))
+            return;
+
+          // refine category Name
+          awesomeObj.category = awesomeObj.category.replace(/#/g, '');
+
+          finalList.push(awesomeObj);
+        }
+      )
+
+      return callback(null, finalList);
     }
   );
 }
