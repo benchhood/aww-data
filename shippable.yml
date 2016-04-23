@@ -8,7 +8,7 @@ build:
     - echo "pre_ci"
 
   ci:
-    - npm test
+    - echo "We will write tests soon and execute it here"
 
   post_ci:
     - echo "post_ci"
