@@ -1,0 +1,10 @@
+module.exports = getOwnerAndRepoFromLink;
+
+function getOwnerAndRepoFromLink (link) {
+  var splittedArray = link.replace('https://github.com/', '').split('/');
+  return {
+    owner : splittedArray[0],
+    repoName : splittedArray[1],
+    link : link
+  };
+}

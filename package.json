@@ -4,6 +4,7 @@
   "description": "Data Fetcher for aww",
   "main": "worker.js",
   "scripts": {
+    "start" : "node setup.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -21,6 +22,7 @@
   },
   "homepage": "https://github.com/scriptnull/aww-data#readme",
   "dependencies": {
+    "async": "^2.0.0-rc.3",
     "chalk": "^1.1.3",
     "request": "^2.70.0"
   }
