@@ -4,8 +4,9 @@
   "description": "Data Fetcher for aww",
   "main": "worker.js",
   "scripts": {
-    "start" : "node setup.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start" : "node start.js",
+    "data-test" : "mocha ./test/data-test.js",
+    "internal-test" : "mocha ./test/internal-test.js"
   },
   "repository": {
     "type": "git",

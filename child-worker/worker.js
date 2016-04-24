@@ -10,10 +10,21 @@ var logger = new Logger(childWorker.name);
 var getAwesomeList = require('./getAwesomeList.js');
 
 function childWorker(repoOwner, repoName, callback) {
-  if (!repoOwner)
-    return callback('repoOwner not found');
-  if (!repoName)
-    return callback('repoName not found');
+
+  if (typeof callback !== 'function') {
+    logger.error('callback is empty');
+    throw new Error('callback is empty');
+  }
+
+  if (typeof repoOwner !== 'string') {
+    logger.error('repoOwner not found %s', repoOwner);
+    return callback('repoOwner param is empty');
+  }
+
+  if (typeof repoName !== 'string') {
+    logger.error('repoName not found %s', repoName);
+    return callback('repoName param is empty');
+  }
 
   fetchGithubReadMe(repoOwner, repoName,
     function (error, content) {

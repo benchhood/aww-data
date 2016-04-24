@@ -31,6 +31,8 @@ function baseWorker(baseAuthor, baseRepoName, finish) {
       async.each(awesomeLists,
         function (awesomeObj, done) {
           var repo = getOwnerAndRepoFromLink(awesomeObj.url);
+          if (!repo)
+            return done('Not able to get repo details for ' + awesomeObj.url);
           childWorker(repo.owner, repo.repoName,
             function (err, data) {
               if (err)

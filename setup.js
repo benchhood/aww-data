@@ -1,3 +1,5 @@
+module.exports = setup;
+
 var envsJson = require('./env.json');
 var Logger = require('./common/logger.js');
 var main = require('./main.js');
@@ -32,7 +34,5 @@ function setup() {
   process.env.GITHUB_API_BASE_URL = envsJson.githubApiBaseUrl;
   process.env.GITHUB_API_TOKEN = envsJson.githubApiToken;
 
-  main();
+  return true;
 }
-
-setup();
