@@ -16,10 +16,13 @@ build:
     - npm install -g mocha
 
   ci:
-    - npm install 
+    - npm install
+    # do data test for local data
     - npm run data-test
     - npm start
     - npm run internal-test
+    # do data test for CI data
+    - npm run data-test
 
   post_ci:
     - echo "post_ci"
