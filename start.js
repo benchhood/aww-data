@@ -7,7 +7,7 @@ console.log('SHIPPABLE_JOB_NUMBER' + process.env.SHIPPABLE_JOB_NUMBER);
 console.log(JSON.stringify(process.env));
 
 // setup environment variables for local environment
-if (!process.env.SHIPPABLE_JOB_NUMBER) {
+if (!process.env.SHIPPABLE) {
   isSetupSuccess = setup();
 }
 else {
