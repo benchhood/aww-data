@@ -7,7 +7,7 @@ env:
   global:
     - BASE_LIST_AUTHOR="sindresorhus"
     - BASE_LIST_REPO="awesome"
-    - DATA_PATH= "./data/aww.json"
+    - DATA_PATH="./data/aww.json"
     - GITHUB_API_BASE_URL="https://api.github.com"
     - secure: CHstBW2iKn3peDmZbQ7gGtw8XQdpjYa6xXSl4JsjfRaUBse6ReOZYb8znCP+kSj558AKx9E0mnA9JR6eqPkRgTkPHtJWjjXmNNq2ReYMip6SEkvU+aPk80ac98ufX66QZRJPlmPnj1pmY+e0yqUE0yGPxrpjTaYkoxJk1i8vwjC3xh/9v+3LsocjflB4h1gIesRpq3ZNQqgjDhz486Rhxe9mFEjslGQ7CbFeCqqtA+3deAwpz7XvUIg9RtlaxboBsbDwwOYu0LHAO2aZhnMvTKlWMHcEJnhIYsdHr2WUoCzjgjEl+wciwOSIvKfAwWqwV9lJ6bEiVRVuS3yRJww+wA==
 
