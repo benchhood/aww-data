@@ -17,7 +17,6 @@ build:
 
   ci:
     - npm run data-test
-    - node printenv
     - npm start
     - npm run internal-test
 
