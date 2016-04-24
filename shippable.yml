@@ -16,6 +16,7 @@ build:
     - npm install -g mocha
 
   ci:
+    - npm install 
     - npm run data-test
     - npm start
     - npm run internal-test
