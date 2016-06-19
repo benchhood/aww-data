@@ -6,22 +6,23 @@
   "scripts": {
     "start" : "node start.js",
     "data-test" : "mocha ./test/data-test.js",
-    "internal-test" : "mocha ./test/internal-test.js"
+    "internal-test" : "mocha ./test/internal-test.js",
+    "base-awesome-list-test" : "mocha ./test/base-awesome-list-test.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/scriptnull/aww-data.git"
+    "url": "git+https://github.com/benchhood/aww-data.git"
   },
   "keywords": [
     "awesome",
     "aww"
   ],
   "author": "Vishnu Bharathi <vishnubharathi04@gmail.com> (https://twitter.com/scriptnull)",
-  "license": "GPL-3.0",
+  "license": "MIT",
   "bugs": {
-    "url": "https://github.com/scriptnull/aww-data/issues"
+    "url": "https://github.com/benchhood/aww-data/issues"
   },
-  "homepage": "https://github.com/scriptnull/aww-data#readme",
+  "homepage": "https://github.com/benchhood/aww-data#readme",
   "dependencies": {
     "async": "^2.0.0-rc.3",
     "chalk": "^1.1.3",
